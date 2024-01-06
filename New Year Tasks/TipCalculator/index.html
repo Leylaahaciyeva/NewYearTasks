@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+     <!-- FontFamily -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+     
+     <!-- TailwindCSS -->
+         <script src="https://cdn.tailwindcss.com"></script>
+       <script>
+         tailwind.config = {
+           theme: {
+             extend: { 
+                 fontFamily:{
+                     poppins:["Poppins","sans serif"],
+                 },
+             },
+           },
+         };
+       </script>
+</head>
+<body class="flex flex-col justify-center items-center min-h-screen bg-[#7AE8D9] font-poppins">
+    <div class="h-[300px] w-[400px] bg-[#CEE7E4] px-[50px] pt-[70px]">
+    <div class="flex justify-between mb-[54px]">
+       <h1 class="font-normal text-[32px]">Tip:</h1>
+       <span id="tip" class="text-[#4E4E4E] font-normal text-[32px]">$15.0</span>
+    </div>
+    <div class="flex justify-between mb-[4px]">
+      <h1 class="font-normal text-[32px]">Total:</h1>
+      <span id="total" class="text-[#4E4E4E] font-normal text-[32px]">$165.0</span>
+   </div>
+    </div>
+    <div class="bg-[#2B3841] w-[400px] h-[326px] px-[20px] pt-[30px] pb-[40px] grid grid-rows-3 gap-[10px]">
+       <div>
+        <h1 class="text-xl text-[#CEE7E4] mb-[10px] font-semibold">Bill</h1>
+        <input id="bill"  type="text" class="w-[340px] h-[42px] bg-[#35BEB8] outline-none border-transparent px-[120px] cursor-pointer">
+       </div>
+       <div>
+        <h1 class="text-xl text-[#CEE7E4] mb-[10px] font-semibold">Tip</h1>
+         <div class="flex">
+          <div id="decreaseTip" class="bg-[#7AE8D9] h-[42px] w-[42px] text-white font-bold text-3xl flex justify-center cursor-pointer">-</div>
+          <div class="w-[256px] h-[42px] bg-[#35BEB8] py-[6px]"><h1  id="tipBtn" class="flex justify-center text-xl text-white font-semibold ">10%</h1></div>
+          <div id="increaseTip" class="bg-[#7AE8D9] h-[42px] w-[42px] text-white font-bold text-3xl flex justify-center cursor-pointer">+</div>
+         </div>
+       </div>
+       <div>
+        <h1 class="text-xl text-[#CEE7E4] mb-[10px] font-semibold">No. of People</h1>
+         <div class="flex">
+          <div id="decreasePpl" class="bg-[#7AE8D9] h-[42px] w-[42px] text-white font-bold text-3xl flex justify-center cursor-pointer">-</div>
+          <div class="w-[256px] h-[42px] bg-[#35BEB8] py-[6px]"><h1 id="ppl" class="flex justify-center text-xl text-white font-semibold ">1</h1></div>
+          <div id="increasePpl" class="bg-[#7AE8D9] h-[42px] w-[42px] text-white font-bold text-3xl flex justify-center cursor-pointer">+</div>
+         </div>
+       </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

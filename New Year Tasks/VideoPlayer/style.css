@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 1100px;
+    height: 600px;
+    position: absolute;
+}
+.container img{
+    width: 100%;
+    height: 100%;
+}
+.line{
+    background-color: #00000080;
+    height: 80px;
+    width: 100%;
+    position: relative;
+    bottom: 190px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.volume{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.volume p{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+.screen{
+    display: flex;
+    gap: 15px;
+}
+.progressContainer{
+    background-color: rgba(255, 255, 255, 0.50);
+    width: 100%;
+    height: 5px;
+    position: relative;
+    bottom: 190px;
+}
+.progressFill{
+    width: 200px;
+    height: 5px;
+    background-color: azure;
+
+}
+.volumeContainer{
+    width: 5px;
+   height: 100px;
+   background-color: rgba(255, 255, 255, 0.50);
+   margin-left: 100px;
+   position: relative;
+   bottom: 210px;
+}
+.volumeFill{
+    height: 20px;
+    width: 5px;
+    background-color: azure;   
+    position: relative;
+    top: 80px;
+}
